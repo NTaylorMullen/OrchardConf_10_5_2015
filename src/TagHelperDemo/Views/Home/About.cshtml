@@ -1,9 +1,7 @@
-﻿@{
-    ViewData["Title"] = "About";
-}
-<h2>@ViewData["Title"].</h2>
-<h3>@ViewData["Message"]</h3>
-
-<markdown>
+﻿<markdown>
     Here is a [link](https://www.stackoverflow.com) to **stack overflow**.
 </markdown>
+
+@Component.Invoke("Shapeish", "John Doe", 38)
+
+<shapeish age="28" name="Younger John Doe" />
